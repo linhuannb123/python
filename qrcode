@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+-*- coding:utf-8 -*-
+import qrcode 
+date = input("请输入要生成二维码的内容")
+img = qrcode.make(date)
+img.seve("qr.jpg")
+print("二维码已生成(qr.jpg)!")
+input("\n按回车键退出....")
